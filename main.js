@@ -8,6 +8,7 @@ const Ytb = require ('./commands/ytb')
 const Yt = require ('./commands/yt')
 const Boutique = require ('./commands/boutique')
 const Help = require ('commands/help')
+const token = process.env.token;
 
 bot.on('ready', () => {
     console.log("Bot ready !")
@@ -37,4 +38,4 @@ bot.on('message', function (message) {
     }
 })
 
-bot.login('NDc0ODgzMjk1MzI3NTUxNDg5.DlRi9g.dbrNtH__CewzRTr_14Pc-wZwYfg')
+bot.login(token)
